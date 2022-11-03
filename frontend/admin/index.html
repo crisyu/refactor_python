@@ -14,4 +14,12 @@
     <h1>Admin</h1>
     Only users in the <b>admin</b> role can access this page.
 </body>
+<script>
+    async function getBackend() {
+            const response = await fetch('/api/test_roles');
+            const user = await response.json();
+        }
+
+        getBackend()
+</script>
 </html>
