@@ -18,6 +18,7 @@
     async function getBackend() {
             const response = await fetch('/api/test_roles');
             const user = await response.json();
+            document.write("hello")
         }
 
         getBackend()
